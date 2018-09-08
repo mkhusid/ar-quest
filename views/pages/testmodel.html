@@ -9,16 +9,35 @@
   
   <body>
     <a-scene background="color: #ECECEC">
+        <a-assets>
+            <a-asset-item id="enigma_obj" src="https://raw.githubusercontent.com/mkhusid/ar-quest/master/views/pages/models/enigma.obj">
+            <a-asset-item id="enigma_mtl" src="https://raw.githubusercontent.com/mkhusid/ar-quest/master/views/pages/models/enigma.mtl">
+      
+            <a-asset-item id="sextant_obj" src="https://raw.githubusercontent.com/mkhusid/ar-quest/master/views/pages/models/sextant.obj">
+            <a-asset-item id="sextant_mtl" src="https://raw.githubusercontent.com/mkhusid/ar-quest/master/views/pages/models/sextant.mtl"> 
+      
+            <a-asset-item id="termostat_obj" src="https://raw.githubusercontent.com/mkhusid/ar-quest/master/views/pages/models/termostat.obj">
+            <a-asset-item id="termostat_mtl" src="https://raw.githubusercontent.com/mkhusid/ar-quest/master/views/pages/models/termostat.mtl">
+      
+            <a-asset-item id="tomograf_obj" src="https://raw.githubusercontent.com/mkhusid/ar-quest/master/views/pages/models/tomograf.obj">
+            <a-asset-item id="tomograf_mtl" src="https://raw.githubusercontent.com/mkhusid/ar-quest/master/views/pages/models/tomograf.mtl">
+      
+            <a-asset-item id="ethane_obj" src="https://raw.githubusercontent.com/mkhusid/ar-quest/master/views/pages/models/ethane.obj">
+            <a-asset-item id="ethane_mtl" src="https://raw.githubusercontent.com/mkhusid/ar-quest/master/views/pages/models/ethane.mtl">
+              
+            <a-asset-item id="klorofilly_obj" src="https://raw.githubusercontent.com/mkhusid/ar-quest/master/views/pages/models/klorofylli.obj">
+            <a-asset-item id="klorofilly_mtl" src="https://raw.githubusercontent.com/mkhusid/ar-quest/master/views/pages/models/klorofylli.mtl">                
+          </a-assets>
 
-
-     <a-obj-model src="models/enigma.obj" position="1 1 1"    ></a-obj-model>
-     <a-obj-model src="models/klorofylli.obj"   ></a-obj-model>
-     <a-obj-model src="models/termostat.obj" mtl="models/termostat.mtl" ></a-obj-model>
-     <a-obj-model src="models/tomograf.obj" mtl="models/tomograf.mtl"    ></a-obj-model>
-     <a-obj-model src="models/ethane.obj" mtl="models/ethane.mtl"    ></a-obj-model>
-     <a-obj-model src="models/sextant.obj" mtl="models/sextant.mtl"    ></a-obj-model>
-
-
+            <a-obj-model src="#enigma_obj"   scale="1 1 1 "  ></a-obj-model>
+      
+            <a-obj-model src="#ethane_obj" mtl="#ethane_mtl"  scale="1 1 1 "  ></a-obj-model>
+      
+            <a-obj-model src="#termostat_obj" mtl="#termostat_mtl"   scale="1 1 1 "  ></a-obj-model>
+      
+            <a-obj-model src="#sextant_obj" mtl="#sextant_mtl"  scale="1 1 1 "  ></a-obj-model>
+      
+            <a-obj-model src="#tomograf_obj" mtl="#tomograf_mtl"  scale="1 1 1 "  ></a-obj-model>
     </a-scene>
   </body>
 </html>
