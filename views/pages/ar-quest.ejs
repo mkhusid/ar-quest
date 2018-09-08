@@ -11,16 +11,16 @@
 <body style='margin : 0px; overflow: hidden;'>
 	<a-scene embedded arjs='sourceType: webcam; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
             <a-assets>
-                    <a-asset-item id="test-obj" src="models/couch.obj">
-                    <a-asset-item id="test-mtl" src="models/couch.mtl">
+					<a-asset-item id="test-obj" src="https://raw.githubusercontent.com/mkhusid/ar-quest/master/views/pages/models/couch.obj">
+					<a-asset-item id="test-mtl" src="https://raw.githubusercontent.com/mkhusid/ar-quest/master/views/pages/models/couch.mtl">
             </a-assets>
 
 		<a-marker preset="hiro">
 			<a-box position='0 0.5 0' material='color: black;'></a-box>
         </a-marker>
         
-        <a-marker type="pattern" url="markers/hiro.patt">
-			<a-obj-model src="models/couch.obj" mtl="models/couch.mtl" scale="1 1 1"  ></a-obj-model>
+        <a-marker type="pattern" url="https://raw.githubusercontent.com/mkhusid/ar-quest/master/views/pages/markers/hiro.patt">
+            <a-obj-model src="#test-obj" mtl="#test-mtl" scale="1 1 1"  ></a-obj-model>
         </a-marker>
 
 
